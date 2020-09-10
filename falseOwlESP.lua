@@ -7,6 +7,7 @@ local setmetatable = setmetatable;
 local newDrawing = Drawing.new;
 local newVector2 = Vector2.new;
 local newVector3 = Vector3.new;
+local fromRGB = Color3.fromRGB;
 local remove = table.remove;
 
 local headOffset = newVector3(0, 0.5, 0);
