@@ -130,7 +130,7 @@ function falseLibrary:NewButton(Text)
 	Button.TextSize = 14.000
 	Button.TextXAlignment = Enum.TextXAlignment.Left
 end
-function falseLibrary.Others:NewBorder(Text)
+function falseLibrary:NewBorder(Text)
 	Border.Name = "Border"
 	Border.Parent = Frame
 	Border.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -172,4 +172,4 @@ function falseLibrary:NewBox(Text, PlaceHolderText)
 	Box.TextSize = 14.000
 	Box.TextXAlignment = Enum.TextXAlignment.Left
 end
-return falseLibrary
+return falseLibrary;
