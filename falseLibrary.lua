@@ -19,7 +19,7 @@ local BorderText = Instance.new("TextLabel")
 local Box = Instance.new("TextBox")
 local Minimize = Instance.new("TextButton")
 -- functions --
-function falseLibrary:NewWindow(Text)
+function falseLibrary.NewWindow(Text)
 	falselib.Name = "falselib"
 	falselib.Parent = game:GetService("CoreGui")
 	falselib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -91,7 +91,7 @@ function falseLibrary:NewWindow(Text)
 	Minimize.TextSize = 14.000
 	Minimize.TextWrapped = true
 end
-function falseLibrary:NewToggle(Text, Name)
+function falseLibrary.NewToggle(Text, Name)
 	Toggle.Name = Name or "Toggle"
 	Toggle.Parent = Frame
 	Toggle.BackgroundColor3 = Color3.fromRGB(188, 0, 0)
@@ -117,7 +117,7 @@ function falseLibrary:NewToggle(Text, Name)
 	UICorner_2.CornerRadius = UDim.new(0, 5)
 	UICorner_2.Parent = Toggle
 end
-function falseLibrary:NewButton(Text, Name)
+function falseLibrary.NewButton(Text, Name)
 	Button.Name = Name or "Button"
 	Button.Parent = Frame
 	Button.BackgroundColor3 = Color3.fromRGB(30, 20, 40)
@@ -158,7 +158,7 @@ function falseLibrary:NewBorder(Text, Name)
 	BorderText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	BorderText.TextSize = 14.000
 end
-function falseLibrary:NewBox(Text, PlaceHolderText, Name)
+function falseLibrary.NewBox(Text, PlaceHolderText, Name)
 	Box.Name = Name or "Box"
 	Box.Parent = Frame
 	Box.BackgroundColor3 = Color3.fromRGB(30, 20, 40)
