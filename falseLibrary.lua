@@ -91,7 +91,7 @@ function falseLibrary:NewWindow(Text)
 	Minimize.TextSize = 14.000
 	Minimize.TextWrapped = true
 end
-function falseLibrary.Buttons:NewToggle(Text)
+function falseLibrary:NewToggle(Text)
 	Toggle.Name = "Toggle"
 	Toggle.Parent = Frame
 	Toggle.BackgroundColor3 = Color3.fromRGB(188, 0, 0)
@@ -117,7 +117,7 @@ function falseLibrary.Buttons:NewToggle(Text)
 	UICorner_2.CornerRadius = UDim.new(0, 5)
 	UICorner_2.Parent = Toggle
 end
-function falseLibrary.Buttons:NewButton(Text)
+function falseLibrary:NewButton(Text)
 	Button.Name = "Button"
 	Button.Parent = Frame
 	Button.BackgroundColor3 = Color3.fromRGB(30, 20, 40)
@@ -158,7 +158,7 @@ function falseLibrary.Others:NewBorder(Text)
 	BorderText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	BorderText.TextSize = 14.000
 end
-function falseLibrary.Others:NewBox(Text, PlaceHolderText)
+function falseLibrary:NewBox(Text, PlaceHolderText)
 	Box.Name = "Box"
 	Box.Parent = Frame
 	Box.BackgroundColor3 = Color3.fromRGB(30, 20, 40)
